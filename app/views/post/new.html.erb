@@ -1,0 +1,13 @@
+<h1> New Post <h1>
+
+<%= form_for :post do |post|%>
+  <p>
+    <%= post.label :text%><br>
+    <%= post.text_area :text %>
+  </p>
+
+  <p>
+    <%= post.submit%>
+  </p>
+
+  <% end %>
