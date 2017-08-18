@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'homepage/index'
 
-  resources :post
+  resources :posts
 
   root 'homepage#index'
 end

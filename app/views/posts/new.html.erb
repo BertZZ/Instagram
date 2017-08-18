@@ -1,0 +1,12 @@
+<h1> New Post <h1>
+
+<%= form_for @post do |form|%>
+  <p>
+    <%= form.text_area :message %>
+  </p>
+
+  <p>
+    <%= form.submit%>
+  </p>
+
+  <% end %>
