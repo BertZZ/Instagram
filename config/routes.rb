@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   get 'homepage/index'
+  root 'homepage#index'
 
   resources :posts
 
-  root 'homepage#index'
+  resources :users,
+    controller: 'users',
+    only: 'create'
 end
